@@ -222,7 +222,7 @@ public static void main(String[] args)
         for (int a = 0; a < 25; a++) {
             board2[a] = String.valueOf(a + 1);
         }
-        System.out.println("Welcome to 5x5 Tic Tac Toe. This round you have powers using a power does not use your turn: \n  type \"N\" to activate a nuke which clears the entire board \n  type \"B\" to place a bolder which makes it so no one can place their peice on that spot\n  type \"F\" to freeze your opponents next turn \n  type \"G\" to glue a spot causing the next person to place a peice on that spot to lose their next turn \n  type \"s\" to stal \n  type \"D\" for a drill \n  type \"P\" to place a peice \n each player has one activation of each power.");
+        System.out.println("Welcome to 5x5 Tic Tac Toe. This round you have powers using a power that does not use your turn: \n  type \"N\" to activate a nuke which clears the entire board \n  type \"B\" to place a bolder which makes it so no one can place their piece on that spot\n  type \"F\" to freeze your opponent's next turn \n  type \"G\" to glue a spot causing the next person to place a piece on that spot to lose their next turn \n  type \"s\" to stall a turn \n  type \"D\" to drill glue, boulders, and pieces away\n  type \"P\" to place a piece \n each player has one activation of each power.");
         printBoard2();
         System.out.println("X will play first. chose your move: ");
         while (winner2 == null) {
@@ -263,7 +263,7 @@ public static void main(String[] args)
                         board2[binput - 1] = "" + binput;
                         printBoard2();
                         String killtest = in.nextLine();
-                        System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in: ");
+                        System.out.println(turn + "'s turn; choose your move: ");
                     }
                     else {
                         System.out.println("out of uses, try something else");
@@ -302,7 +302,7 @@ public static void main(String[] args)
                         }
                         printBoard2();
                         String killtest = in.nextLine();
-                        System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in: ");
+                        System.out.println(turn + "'s turn; choose your move: ");
                     }
                     else {
                         System.out.println("out of uses, try something else :");
@@ -319,7 +319,7 @@ public static void main(String[] args)
                             board2[a] = String.valueOf(a + 1);
                         }
                         printBoard2();
-                        System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in: ");
+                        System.out.println(turn + "'s turn; choose your move: ");
                         bomb1--;
                     }
                     else{
@@ -334,7 +334,7 @@ public static void main(String[] args)
                             board2[a] = String.valueOf(a + 1);
                         }
                         printBoard2();
-                        System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in: ");
+                        System.out.println(turn + "'s turn; choose your move:");
                         bomb2--;
                     }
                     else{
@@ -376,7 +376,7 @@ public static void main(String[] args)
                         }
                         printBoard2();
                         String killtest = in.nextLine();
-                        System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in: ");
+                        System.out.println(turn + "'s turn; choose your move: ");
                     }
                     else {
                         System.out.println("out of uses, try something else");
@@ -415,7 +415,7 @@ public static void main(String[] args)
                         }
                         printBoard2();
                         String killtest = in.nextLine();
-                        System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in: ");
+                        System.out.println(turn + "'s turn; choose your move: ");
                     }
                     else {
                         System.out.println("out of uses, try something else :");
@@ -446,7 +446,7 @@ public static void main(String[] args)
                         System.out.println("out of uses, try something else :");
                     }
                 }
-                System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in: ");
+                System.out.println(turn + "'s turn; choose your move: ");
             }
             if (typeMove.equals("G"))
             {
@@ -482,7 +482,7 @@ public static void main(String[] args)
                         }
                         printBoard2();
                         String killtest = in.nextLine();
-                        System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in: ");
+                        System.out.println(turn + "'s turn; choose your move: ");
                     }
                     else {
                         System.out.println("out of uses, try something else");
@@ -521,7 +521,7 @@ public static void main(String[] args)
                         }
                         printBoard2();
                         String killtest = in.nextLine();
-                        System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in: ");
+                        System.out.println(turn + "'s turn; choose your move: ");
                     }
                     else {
                         System.out.println("out of uses, try something else :");
@@ -554,13 +554,13 @@ public static void main(String[] args)
                         System.out.println("out of uses, try something else :");
                     }
                 }
-                System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in: ");
+                System.out.println(turn + "'s turn; choose your move ");
             }
             if (typeMove.equals("C"))
             {
                 System.out.println("car");
                 System.out.println("you got hit by a car, you recover instantly");
-                System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in: ");
+                System.out.println(turn + "'s turn; choose your move: ");
             }
             if (typeMove.equals("P")){
                 System.out.println("where to place:");
