@@ -5,7 +5,7 @@ static String[] board2;
 static String turn;
 static boolean freeze1;
 static boolean freeze2;
-
+//checks for winner for the 3x3
 static String checkWinner()
 {
     for (int a = 0; a < 8; a++) {
@@ -57,7 +57,7 @@ static String checkWinner()
     System.out.println(turn + "'s turn; enter a slot number to place " + turn + " in: ");
     return null;
 }
-
+//Checks for the winner the 5x5
 static String checkWinner2()
 {
     for (int a = 0; a < 12; a++) {
@@ -122,7 +122,18 @@ static String checkWinner2()
     System.out.println(turn + "'s turn; chose your move");
     return null;
 }
-
+// read it, shows board for 3x3
+static void printBoard()
+{
+    System.out.println("    |   |    ");
+    System.out.println("  " + board[0] + " | " + board[1] + " | " + board[2] + "  ");
+    System.out.println("----|---|----");
+    System.out.println("  " + board[3] + " | " + board[4] + " | " + board[5] + "  ");
+    System.out.println("----|---|----");
+    System.out.println("  " + board[6] + " | " + board[7] + " | " + board[8] + "  ");
+    System.out.println("    |   |    ");
+}
+// shows board for 5x5
 static void printBoard2()
 {
     System.out.println("     |    |    |    |     ");
@@ -136,17 +147,6 @@ static void printBoard2()
     System.out.println("-----|----|----|----|-----");
     System.out.println("  " + board2[20] + " | " + board2[21] + " | " + board2[22] + " | " + board2[23] + " | "  + board2[24] + "  ");
     System.out.println("     |    |    |    |     ");
-}
-
-static void printBoard()
-{
-    System.out.println("    |   |    ");
-    System.out.println("  " + board[0] + " | " + board[1] + " | " + board[2] + "  ");
-    System.out.println("----|---|----");
-    System.out.println("  " + board[3] + " | " + board[4] + " | " + board[5] + "  ");
-    System.out.println("----|---|----");
-    System.out.println("  " + board[6] + " | " + board[7] + " | " + board[8] + "  ");
-    System.out.println("    |   |    ");
 }
 
 public static void main(String[] args)
