@@ -222,7 +222,7 @@ public static void main(String[] args)
         for (int a = 0; a < 25; a++) {
             board2[a] = String.valueOf(a + 1);
         }
-        System.out.println("Welcome to 5x5 Tic Tac Toe. This round you have powers using a power that does not use your turn: \n  type \"N\" to activate a nuke which clears the entire board \n  type \"B\" to place a bolder which makes it so no one can place their piece on that spot\n  type \"F\" to freeze your opponent's next turn \n  type \"G\" to glue a spot causing the next person to place a piece on that spot to lose their next turn \n  type \"s\" to stall a turn \n  type \"D\" to drill glue, boulders, and pieces away\n  type \"P\" to place a piece \n each player has one activation of each power.");
+        System.out.println("Welcome to 5x5 Tic Tac Toe. This round you have powers using a power that does not use your turn: \n  type \"N\" to activate a nuke which clears the entire board \n  type \"B\" to place a bolder which makes it so no one can place their piece on that spot\n  type \"F\" to freeze your opponent's next turn \n  type \"G\" to glue a spot causing the next person to place a piece on that spot to lose their next turn \n  type \"s\" to stall for a turn but your opponent also receives an extra turn \n  type \"D\" to drill glue, boulders, and pieces away\n  type \"P\" to place a piece \n each player has one activation of each power.");
         printBoard2();
         System.out.println("X will play first. chose your move: ");
         while (winner2 == null) {
@@ -559,7 +559,7 @@ public static void main(String[] args)
             if (typeMove.equals("C"))
             {
                 System.out.println("car");
-                System.out.println("you got hit by a car, you recover instantly");
+                System.out.println("you got hit by a car, you recover after 14 years. Time to finish what you started.");
                 System.out.println(turn + "'s turn; choose your move: ");
             }
             if (typeMove.equals("P")){
@@ -646,7 +646,7 @@ public static void main(String[] args)
             }
         }
         if (winner2.equalsIgnoreCase("draw")) {
-            System.out.println("It's a draw! bruh.");
+            System.out.println("It's a draw! bruh. `HOW DID YOU MANAGE THAT?!");
         }
         else {
             System.out.println("Congratulations! " + winner2 + "'s have won! Thanks for playing.");
